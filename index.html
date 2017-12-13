@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>F O O D M A P</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 presentation">
+          <h1>Foodmap</h1>
+          <div class="lineImages">
+            <img src="assets/images/square.png" alt="">
+            <div class="linea"></div>
+            <img src="assets/images/square.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid mapResto">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="map"></div>
+
+        </div>
+      </div>
+  </section>
+
+  <section class="search">
+    <h3>Comida cerca de ti</h3>
+    <input class='filtro' id="filtro-categoria" placeholder="filtrar restaurantes">
+    <i class="fa fa-search"></i>
+  </section>
+  <section class="menu">
+
+  </section>
+  <script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyDZByw4yvPz0v8ugX7pLBg4HjtSCOtfkBg&callback=initMap " async
+    defer></script>
+</body>
+
+
+</html>

@@ -68,7 +68,7 @@ $(document).ready(function () {
     var categoria = $('#filtro-categoria').val();
     for (var j = 0; j < data.length; j++) {
       if (categoria === data[j].categoria) {
-
+        var position = j;
         mapa = new google.maps.Map(document.getElementById('map'), opciones);
         const restaurante = data[j];
         var marker = new google.maps.Marker({
@@ -83,7 +83,10 @@ $(document).ready(function () {
           }
         });
       }
-
+    }
+    for (var k = 0; k < data[position].platos.length; k++) {
+      var boxMenu = $('.menu');
+      boxMenu.append('<img src ="' + data[position].platos[k].image + '"/>');
     }
   });
 });

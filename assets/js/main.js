@@ -91,6 +91,14 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('.linea').click(function () {
+
+  });
+});
+
+
+
 
 
 

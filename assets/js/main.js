@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+  setTimeout(function () {
+    $('#splash').fadeOut(500);
+  }, 600);
 });
 var mapa;
 var mapa2;
@@ -128,10 +130,13 @@ $(document).ready(function () {
     boxMenu.html('');
     for (var k = 0; k < data[position].platos.length; k++) {
 
-      boxMenu.append('<img src ="' + data[position].platos[k].image + '"/>');
+      boxMenu.append('<img src ="' + data[position].platos[k].image + '" + title ="' + data[position].platos[k].name + '"/>');
+
 
     }
   });
+
+
 
   $('.modal-close').click(function () {
     initMap();

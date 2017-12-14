@@ -1,5 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .presentation {
-    background-color: gray;
     text-align: center;
 }
 
@@ -12,10 +16,10 @@
 
 .linea {
     width: 90%;
-    height: 0.2em;
+    height: 0.1em;
     display: inline-block;
     background-color: white;
-    margin: 0;
+    margin-top: 0.5em;
     /* border: 1px blue solid; */
 }
 
@@ -30,7 +34,7 @@
 .lineImages {
     display: flex;
     flex-wrap: nowrap;
-    text-align: center;
+    justify-content: center;
 }
 
 .mapResto {
@@ -77,8 +81,14 @@ h1 {
     padding: 0;
 }
 
-.container .menu img[src='assets/images/mexican food/taco.png']:hover {
+.container .menu img:hover {
     cursor: pointer;
+    opacity: 0.5;
+    text-overflow: "ss";
+}
+
+.container .menu img {
+    margin: 1em;
 }
 
 .modal-content {
@@ -89,9 +99,37 @@ h1 {
 }
 
 #modalbody {
-    height: 50vh;
-    width: 50vh;
+    height: 35vh;
+    width: 35vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: gray;
+}
+
+.bloque_color {
+    background-color: #18BC9C;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 251px;
+    align-content: center;
+    transition: opacity 0.2s;
+}
+
+.lupa i {
+    align-self: center;
+    padding-top: 20%;
+    opacity: 1;
+    color: white;
+    font-size: 3em;
 }

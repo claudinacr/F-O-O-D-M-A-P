@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
 }
@@ -70,8 +70,8 @@ h1 {
 }
 
 .menu img {
-    width: 4em;
-    margin: 0;
+    width: 5em;
+    margin: 0em;
     padding: 0;
 }
 
@@ -81,14 +81,13 @@ h1 {
     padding: 0;
 }
 
-.container .menu img:hover {
+.imgResult .menu img:hover {
     cursor: pointer;
-    opacity: 0.5;
-    text-overflow: "ss";
+    opacity: 0.8;
 }
 
 .container .menu img {
-    margin: 1em;
+    margin: 2em;
 }
 
 .modal-content {
@@ -132,4 +131,14 @@ h1 {
     opacity: 1;
     color: white;
     font-size: 3em;
+}
+
+.result {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.imgResult {
+    min-height: 10vh;
+    background-color: gray;
 }

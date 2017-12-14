@@ -2,6 +2,12 @@
 
 @media(max-width:767px) {
     #splash img {
-        width: 58vh;
+        width: 60vh;
     }
+    #finalscreen img {
+        width: 50vh;
+    }
+}
+
+
 }

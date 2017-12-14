@@ -39,7 +39,7 @@ body {
 
 .mapResto {
     text-align: center;
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .search h3 {
@@ -70,13 +70,13 @@ h1 {
 }
 
 .menu img {
-    width: 5em;
-    margin: 0em;
+    text-align: center;
+    width: 4.5em;
+    margin: 1em;
     padding: 0;
 }
 
 .container .menu {
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -84,10 +84,6 @@ h1 {
 .imgResult .menu img:hover {
     cursor: pointer;
     opacity: 0.8;
-}
-
-.container .menu img {
-    margin: 2em;
 }
 
 .modal-content {
@@ -141,4 +137,13 @@ h1 {
 .imgResult {
     min-height: 10vh;
     background-color: gray;
+}
+
+.modal-desc {
+    color: orange;
+}
+
+.modal-title {
+    color: orange;
+    font-weight: bold;
 }

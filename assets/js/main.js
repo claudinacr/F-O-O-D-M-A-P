@@ -11,8 +11,6 @@ var opciones = {
 };
 var restaurantes = [];
 
-
-
 function initMap() {
   mapa = new google.maps.Map(document.getElementById('map'), opciones);
   mapa2 = new google.maps.Map(document.getElementById('modalbody'), opciones);
@@ -42,7 +40,13 @@ function initMap() {
       $('#myModal').find('.modal-title').text(this.title);
       $('#myModal').find('.modal-desc').text(this.description);
       $('#myModal').find('.modal-tlf').text(this.tlf);
+      $('#myModal').find('.modal-tlf').prepend("Telf: ");
       $('#myModal').find('.modal-precio').text(this.precio);
+      $('#myModal').find('.modal-precio').prepend("Rango de precio: ");
+      $('#myModal').find('.modal-dir').text(this.address)
+      $('#myModal').find('.modal-dir').prepend("Dirección: ");
+
+
 
 
 

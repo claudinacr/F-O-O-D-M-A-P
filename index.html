@@ -12,6 +12,8 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -22,18 +24,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
-
 </head>
 
 <body>
   <header>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 presentation">
-          <h1>Foodmap</h1>
+        <div class="col-xs-12 presentation">
+          <p>Foodmap</p>
           <div class="lineImages">
             <img src="assets/images/square.png" alt="">
-            <div class="linea"></div>
+            <div class="linea" data-toggle="modal" data-target="#myModal"></div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close modal-close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body" id='modalbody'>
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <h3 class='modal-desc'></h3>
+                  <h5 class='modal-dir'></h5>
+                  <h5 class='modal-precio'></h5>
+                  <h5 class='modal-tlf'></h5>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-warning modal-close" data-dismiss="modal">Pedir Ahora</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
             <img src="assets/images/square.png" alt="">
           </div>
         </div>
@@ -44,7 +71,7 @@
   <section>
     <div class="container-fluid mapResto">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12">
           <div id="map"></div>
 
         </div>
@@ -52,12 +79,29 @@
   </section>
 
   <section class="search">
-    <h3>Comida cerca de ti</h3>
-    <input class='filtro' id="filtro-categoria" placeholder="filtrar restaurantes">
-    <i class="fa fa-search"></i>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Comida cerca de ti</h3>
+          <input class='filtro' id="filtro-categoria" placeholder="mexicana, mediterranea, americana ó italiana">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="menu">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-11">
+          <div>
+            <div class="menu">
 
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyDZByw4yvPz0v8ugX7pLBg4HjtSCOtfkBg&callback=initMap " async
     defer></script>

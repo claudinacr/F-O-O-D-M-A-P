@@ -128,7 +128,52 @@ $(document).ready(function () {
           }
         });
       }
+      marker.addListener('click', function () {
+        $('#myModal').find('.modal-title').text(this.title);
+        $('#myModal').find('.modal-desc').text(this.description);
+        $('#myModal').find('.modal-tlf').text(this.tlf);
+        $('#myModal').find('.modal-tlf').prepend("Telf: ");
+        $('#myModal').find('.modal-precio').text(this.precio);
+        $('#myModal').find('.modal-precio').prepend("Rango de precio: ");
+        $('#myModal').find('.modal-dir').text(this.address)
+        $('#myModal').find('.modal-dir').prepend("Dirección: ");
+
+
+
+
+
+
+        //google.maps.event.trigger(mapa2, 'resize');
+
+        this.setMap(mapa2);
+        mapa2.setZoom(15);
+        mapa2.setCenter(this.position);
+
+        //map.setMap($('#myModal').find('.modal-body'));
+
+
+
+
+
+
+
+
+
+        $('#myModal').modal('show');
+
+        $('#myModal').on('shown.bs.modal', function () {
+          var lastCenter = mapa2.getCenter();
+          google.maps.event.trigger(mapa2, 'resize');
+          mapa2.setCenter(lastCenter);
+
+        });
+
+
+      });
+
+
     }
+
 
     var boxMenu = $('.menu');
     boxMenu.html('');

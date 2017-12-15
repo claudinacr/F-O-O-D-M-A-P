@@ -118,7 +118,7 @@ $(document).ready(function () {
 
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[j].coords),
-          title: restaurante.categoria,
+          title: restaurante.name,
           map: mapa,
           icon: {
             path: google.maps.SymbolPath.CIRCLE,
